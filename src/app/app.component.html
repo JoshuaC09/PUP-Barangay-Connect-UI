@@ -1,0 +1,45 @@
+<div class="toolbar" role="banner">
+  <img class="logo-image-1" width="90" alt="Angular Logo" src="assets/barangay-connect-logo-3.png" />
+  <img class="logo-image-2" width="130" alt="Angular Logo" src="assets/barangay-connect-logo-name.png" />
+  <div class="center-links">
+    <a routerLink="/home" routerLinkActive="active">
+      <span class="toolbar-link">Home</span>
+    </a>
+    <a routerLink="/about" routerLinkActive="active">
+      <span class="toolbar-link">About</span>
+    </a>
+    <a routerLink="/events" routerLinkActive="active">
+      <span class="toolbar-link">Events</span>
+    </a>
+
+    <div class="services-dropdown hover-services-dropdown" [matMenuTriggerFor]="menu">
+      <span class="toolbar-link services-link">
+        Services <span class="down-arrow">▼</span>
+      </span>
+    </div>
+    <a routerLink="/hotlines" routerLinkActive="active">
+      <span class="toolbar-link">Emergency Hotlines</span>
+    </a>
+    <a routerLink="/announcement" routerLinkActive="active">
+      <span class="toolbar-link">Announcement</span>
+    </a>
+  </div>
+  <div class="right-side">
+
+    <a routerLink="/login" routerLinkActive="active" class="account-circle-icon">
+      <mat-icon class="account-circle-icon custom-icon-color">account_circle</mat-icon>
+    </a>
+  </div>
+</div>
+<mat-menu #menu="matMenu">
+  <a mat-menu-item routerLink="/request">Request a<br />Document</a>
+  <a mat-menu-item routerLink="/blotter">Blotter</a>
+  <a mat-menu-item routerLink="/participate">Participate</a>
+  <a mat-menu-item routerLink="/volunteer">Volunteer</a>
+  <a mat-menu-item routerLink="/forum">Community<br />Forum</a>
+  <a mat-menu-item routerLink="/suggestions">Suggestions</a>  
+</mat-menu>
+
+<div class="content" role="main">
+  <router-outlet></router-outlet>
+</div>

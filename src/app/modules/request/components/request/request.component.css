@@ -1,0 +1,42 @@
+.request-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+}
+
+.animation-step {
+  width: 30%;
+  padding: 20px;
+  background-color: #2D82B7;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+ 
+.request-animation.active .animation-step {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.animation-step h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.animation-step p {
+  font-size: 16px;
+}
+
+ Center the form in the body 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

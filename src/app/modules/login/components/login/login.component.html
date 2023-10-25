@@ -1,0 +1,23 @@
+<body class="body">
+  <div class="login-container">
+    <div class="image-container">
+      <img src="assets/san-vicente-logo.png" alt="San Vicente Logo" class="image">
+      <div class="bottom-text">Welcome San Vicenteños!</div>
+
+      <p class="login-text">Login-in-as:</p>
+
+      <div class="resident-box" (click)="redirectToResidentLogin()">
+        Resident
+      </div>
+
+      <div class="login-box barangay-official-box" (click)="redirectToBarangayOfficialLogin()">
+        Barangay Official
+      </div>
+
+      <div class="register">
+        Don’t have an account? <a class="register-link" (click)="redirectToRegister()">Register</a>
+      </div>
+    </div>
+  </div>
+</body>
+

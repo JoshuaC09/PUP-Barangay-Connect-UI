@@ -1,0 +1,21 @@
+<div class="request-animation">
+  <div class="animation-step" *ngIf="step === 1 " [@stepAnimation]="step" style="background-color: #2D82B7;">
+    <h2>Step 1: Request</h2>
+    <p>Click the desired document and complete the required information.</p>
+  </div>
+
+  <div class="animation-step" *ngIf="step === 2" [@stepAnimation]="step" style="background-color: #42E2B8;">
+    <h2>Step 2: Submission</h2>
+    <p>Click the "Submit" button to initiate the processing of your request.</p>
+  </div>
+
+  <div class="animation-step" *ngIf="step === 3" [@stepAnimation]="step" style="background-color: #EB8A90;">
+    <h2>Step 3: Wait for Approval</h2>
+    <p>Please allow some time to be reviewed and approved.</p>
+  </div>
+
+  <div class="animation-step" *ngIf="step === 4" [@stepAnimation]="step" style="background-color: #FFA500;">
+    <h2>Step 4: Document Release</h2>
+    <p> Requested document is now ready for pickup.</p>
+  </div>
+</div>

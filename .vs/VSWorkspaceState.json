@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\modules",
+    "\\src\\app\\modules\\barangay-login\\components",
+    "\\src\\app\\modules\\barangay-login\\components\\barangay-login",
+    "\\src\\app\\modules\\home\\components",
+    "\\src\\app\\modules\\home\\components\\home",
+    "\\src\\app\\modules\\login\\components",
+    "\\src\\app\\modules\\login\\components\\login"
+  ],
+  "SelectedNode": "\\src\\app\\modules\\resident-login",
+  "PreviewInSolutionExplorer": false
+}

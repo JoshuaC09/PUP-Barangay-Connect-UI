@@ -1,0 +1,140 @@
+
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 20px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.content {
+  margin: 100px auto auto 3px;
+  
+  flex-direction: column;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #07004D;
+  color: #42E2B8;
+  font-weight: 600;
+  justify-content: space-between; 
+}
+
+.toolbar-link {
+  color: #42E2B8;
+  padding-right: 2em;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+  .toolbar-link:hover {
+    color: #2D82B7;
+    text-decoration: underline solid 3px;
+  }
+
+.active {
+  color: #2D82B7;
+  text-decoration: underline solid 3px;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+}
+
+.center-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  margin-left: 250px;
+}
+
+.login-link {
+  margin-right: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.services-dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+  .services-dropdown .toolbar-link {
+    color: #42E2B8;
+  }
+
+  .services-dropdown .down-arrow {
+    color: #42E2B8;
+    font-size: 14px; 
+    margin-left: 4px; 
+  }
+
+
+button.mat-icon-button[matMenuTriggerFor] {
+  display: none;
+}
+
+.logo-image-1 {
+  margin-left: 20px; 
+}
+
+.hover-services-dropdown:hover .toolbar-link,
+.hover-services-dropdown:hover .down-arrow {
+  color: #2D82B7; /* Color on hover */
+}
+.account-circle-icon {
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+  margin-right: 1em;
+}
+
+.custom-icon-color {
+  color: #42E2B8;
+  transition: color 0.2s;
+}
+
+  .custom-icon-color:hover {
+    color: #2D82B7; /* Color on hover */
+  }
+
+.custom-text {
+  font-family: 'Harlow Solid Italic', cursive;
+}

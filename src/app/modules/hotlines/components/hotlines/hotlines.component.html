@@ -1,0 +1,26 @@
+<header>
+  <h1>Emergency Hotlines of the Philippines</h1>
+</header>
+<main>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <tr style="display:none!important">
+      <ng-container matColumnDef="agency">
+        <th mat-header-cell *matHeaderCellDef> Agency </th>
+        <td mat-cell *matCellDef="let element"> {{element.agency}} </td>
+      </ng-container>
+      <ng-container matColumnDef="hotlineNumber">
+        <th mat-header-cell *matHeaderCellDef> Hotline Number </th>
+        <td mat-cell *matCellDef="let element"> {{element.hotlineNumber}} </td>
+      </ng-container>
+      <ng-container matColumnDef="specializedFor">
+        <th mat-header-cell *matHeaderCellDef> Specialized For </th>
+        <td mat-cell *matCellDef="let element"> {{element.specializedFor}} </td>
+      </ng-container>
+    </tr>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</main>
+<footer>
+  <p>Copyright &copy; 2023 PUPSMB, All rights reserved</p>
+</footer>

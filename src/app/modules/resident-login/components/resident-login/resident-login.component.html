@@ -1,0 +1,33 @@
+<body class="body">
+  <div class="login-container">
+    <div class="image-container">
+      <img src="assets/san-vicente-logo.png" alt="San Vicente Logo" class="image">
+      <div class="bottom-text">Resident Log-in</div>
+      <div id="email-container" class="form-container">
+        <div class="input-label">Email or Phone*</div>
+        <mat-form-field appearance="fill" class="form-field">
+          <input matInput type="email" required validateOnSubmit class="input">
+        </mat-form-field>
+      </div>
+      <div id="password-container" class="form-container">
+        <div class="input-label">Password*</div>
+        <mat-form-field appearance="fill" class="form-field">
+          <div class="password-input">
+            <button mat-icon-button class="icon-button" (click)="togglePasswordVisibility(passwordInput)">
+              <mat-icon class="password-icon">{{ passwordVisibilityIcon }}</mat-icon>
+            </button>
+            <input matInput [type]="passwordFieldType" required validateOnSubmit #passwordInput class="input">
+          </div>
+        </mat-form-field>
+        <div class="forgot-password">
+          <a class="forgot-password-link" (click)="redirectToForgotPassword()">Forgot Password?</a>
+        </div>
+        <button class="login-button" (click)="onLoginClick()">Log-in</button>
+      </div>
+      <div class="register">
+        Don’t have an account? <a class="register-link" (click)="redirectToRegister()">Register</a>
+      </div>
+    </div>
+  </div>
+</body>
+

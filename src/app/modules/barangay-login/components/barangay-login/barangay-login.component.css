@@ -1,0 +1,126 @@
+.body {
+  background-color: white;
+}
+
+.login-container {
+  background-image: url('/assets/lo-in-sign-up-image-2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  margin-left: -3px;
+  margin-right: 700px;
+}
+
+.image {
+  position: absolute;
+  right: 250px;
+  top: 170px;
+  width: 180px;
+  height: 180px;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 500px;
+  right: 135px;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+}
+
+
+  .bottom-text::before {
+    content: "";
+    display: block;
+    width: 136%; /* Adjust the width of the line here */
+    height: 4px; /* Adjust the thickness of the line here */
+    background-color: black; /* Adjust the line color here */
+    position: absolute;
+    bottom: -50px; /* Adjust the distance of the line from the text here */
+    left: -50px;
+    transform: translateX(-3.4%);
+  }
+ /* Login Form*/
+
+.input-label {
+  position: absolute;
+  text-align: center;
+  color: black;
+  margin-top: -50px; 
+  margin-left: 1400px;
+  font-size: 25px;
+}
+
+
+.form-field {
+  background-color: none;
+  border: none;
+  padding: 0;
+  width: 30%; /* Adjust the width as needed */
+  margin-left: 1400px;
+  height: 30%;
+  border-radius: 20px;
+}
+
+.input {
+  width: 100%;
+}
+
+.password-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+  .password-input .icon-button {
+    order: 1;
+  }
+
+.password-icon {
+  background-color: transparent;
+}
+
+.icon-button {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.form-container {
+  width: contain;
+  position: absolute;
+  top: 60%; /* Adjust the vertical position as needed */
+  right: 20%; /* Adjust the horizontal position as needed */
+}
+
+#email-container {
+  position: absolute;
+  top: 60%; /* Adjust the vertical position for email field */
+  right: 20%; /* Adjust the horizontal position for email field */
+}
+
+#password-container {
+  position: absolute;
+  top: 75%; /* Adjust the vertical position for password field */
+  right: 20%; /* Adjust the horizontal position for password field */
+}
+
+.login-button {
+  background-color: #07004D; /* Background color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 150%; /* Adjust the vertical position as needed */
+  left: 102%; /* Adjust the horizontal position as needed */
+  transform: translateX(-50%); /* Center horizontally */
+  width: 487px; 
+  height: 70px;
+}
+
+  .login-button:hover {
+    background-color: #0A0E75; /* Change background color on hover */
+  }

@@ -1,0 +1,112 @@
+.body{
+  background-color: white;
+}
+.login-container {
+  background-image: url('/assets/log-in-sign-up-image.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  margin-left: -3px;
+  margin-right: 700px;
+ 
+}
+
+.image {
+  position: absolute;
+  right: 250px;
+  top: 170px;
+  width: 180px;
+  height: 180px;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 500px; 
+  right: 110px;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+}
+
+
+  .bottom-text::before {
+    content: "";
+    display: block;
+    width: 123%; /* Adjust the width of the line here */
+    height: 4px; /* Adjust the thickness of the line here */
+    background-color: black; /* Adjust the line color here */
+    position: absolute;
+    bottom: -50px; /* Adjust the distance of the line from the text here */
+    left: -50px;
+  }
+
+.login-text {
+  /* Adjust the position of "Login-in-as" */
+  position: absolute;
+  bottom: 330px; /* Adjust the vertical position as needed */
+  right: 426px; /* Adjust the horizontal position as needed */
+  color: black;
+  font-size: 39px; /* Adjust the font size as needed */
+}
+
+
+
+.resident-box {
+  background-color: #07004D;
+  color: white;
+  text-align: center;
+  width: 400px;
+  height: 70px;
+  margin: 10px auto;
+  line-height: 70px;
+  font-size: 18px;
+  position: relative;
+  top: 500px;
+  margin-right: -590px;
+  margin-bottom: 540px;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+  .resident-box:hover {
+    background-color: #040066; /* Change to the desired color when hovering */
+  }
+
+
+.barangay-official-box {
+  background-color: #42E2B8;
+  color: black;
+  text-align: center;
+  width: 400px;
+  height: 70px;
+  margin: 10px auto;
+  line-height: 70px;
+  font-size: 18px;
+  margin-right: -590px;
+  border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+  .barangay-official-box:hover {
+    background-color: #44D7B0; 
+  }
+
+.register {
+  position: absolute;
+  bottom: 60px; 
+  right: 170px; 
+  color: black;
+  font-size: 32px; 
+}
+.register-link {
+  color: #0A0E75;
+  cursor: pointer;
+}
+
+  .register-link:hover {
+    text-decoration: underline;
+
+  }
